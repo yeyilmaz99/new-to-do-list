@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <title>To Do List!</title>
+  </head>
+  <style>
+      .btn1{
+          float: right;
+      }
+  </style>
+  <body>
+    <div class="container mt-3">
+        <h1>To Do List</h1>
+        <hr>
+        <div class="row row1 justify-content-center ">
+            <div class="col-md-6">
+                <form id="new-list">
+                    <div class="form-group mt-4">
+                        <label for="To-Do">To Do Task</label>
+                        <input id="To-Do" type="text" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="Time">Time</label>
+                        <input id="Time" type="text" class="form-control">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-secondary">Save</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <table style="text-align: center;" class="table table-bordered table-striped">
+                    <thead>
+                        <h2 style="text-align: center;">To Do List</h2>
+                        <tr>
+                            <th>To Do Task</th>
+                            <th>Time</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="Task-List">
+
+                    </tbody>
+                </table>
+                <button type="submit" id="delall1" class="btn btn1 btn-danger">Delete All</button>
+            </div>
+            <div class="col-md-6 mt-4" >
+                <table style="text-align: center;" class="table table-bordered table-striped">
+                    <thead>
+                        <h2 style="text-align: center;">Done List</h2>
+                        <tr>
+                            <th>Done Task</th>
+                            <th>Time</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="Done-List">
+
+                    </tbody>
+                </table>
+                <button type="submit" id="delall2" class="btn btn1 btn-danger">Delete All</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
